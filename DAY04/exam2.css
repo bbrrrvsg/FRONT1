@@ -1,0 +1,32 @@
+.title{
+    font-family: "맑은고딕","굴림";
+    font-size: 40px;
+    font-weight: bold; /* 글꼴 진하게*/
+    font-style: italic; /* 글꼴 기울임 */
+}
+
+/* 외부 폰트 : 1. 한글 : 눈누 ,  2. 영문 : 구글폰트 */
+@font-face {
+    font-family: 'OngleipParkDahyeon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+.content{
+    font-family: 'OngleipParkDahyeon';
+    color: purple; /* 글꼴 색*/
+    word-spacing: 10px; /* 단어 간격 : 어간 */
+    letter-spacing: 10px; /* 글자 간격 : 자간 */
+    line-height: 150%; /* 줄 간격 100~150% 많이씀*/
+}
+
+.writer{
+    text-align: left; /*content(내용물) 가로 정렬 (left,right,center) */
+    text-decoration: line-through; /* underline: 밑줄 overline : 윗줄 line-through : 가운데 줄(취소선)*/
+    text-shadow: 1px 1px 1px gray ; /*텍스트 그림자 : x축(+right -left) y축(+bottom -top)*/
+    color : green;
+    color : rgb(140, 200 , 100);
+    color : #000000;
+    
+}

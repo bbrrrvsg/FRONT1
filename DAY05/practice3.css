@@ -1,0 +1,30 @@
+.sp1{
+    color: orange;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.sp2{
+    color: orange;
+}
+
+ul{
+    color: white;
+    list-style-type: "- ";
+}
+
+.box1{
+    background-color: #008B8B;
+    padding: 5px;;
+    width: 500px;
+}
+
+.text1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img{
+    width: 300px;
+    margin-bottom: 20px;
+}

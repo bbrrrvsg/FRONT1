@@ -1,5 +1,6 @@
 span{
     color: blue;
+    text-decoration: underline;
 }
 
 button{
@@ -11,17 +12,17 @@ button{
     box-sizing: border-box;
     border: pink;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 0 auto; /* 해당 구역 가로 가운데*/
     text-align: center;
     padding: 30px;
     width: 350px;
-    box-shadow: 0 5px 10px pink;
-    margin: 100px;
+    box-shadow: 0px 5px 10px pink;
+    
 }
 
 input{
     border-radius: 10px;
-    border: solid 1px grey;
+    border: solid 1px #D3D3D3;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
@@ -29,7 +30,7 @@ input{
 
 }
 button{
-    border: solid 1px grey;
+    border: none;
     border-radius: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -43,8 +44,4 @@ button{
     font-weight: bold;
     font-size: 20px;
     margin: 20px;
-}
-body{
-    display: flex;
-    justify-content: center;
 }

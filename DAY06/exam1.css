@@ -1,0 +1,69 @@
+.box{
+    border: 1px solid red;
+    width: 100px; padding: 10px;
+}
+
+.flexbox1{
+    display: flex; /*하위 요소에 대헤*/
+    border: 1px solid blue;
+    width: 250px; /*각 자식들이 100px*/
+    flex-wrap: nowrap; /*기본값 : 하위요소가 넘치면 자동으로 하위요소들 크기조정*/
+
+}
+
+.flexbox2{
+    display: flex; /*하위 요소에 대헤*/
+    border: 1px solid blue;
+    width: 250px; /*각 자식들이 100px*/
+    flex-wrap: wrap;/*하위요소가 넘치면 자동으로 줄바꿈*/
+
+}
+
+.flexbox3{
+    display: flex; /*하위 요소에 대헤*/
+    border: 1px solid blue;
+    flex-direction: row; /*기본값(row) : 하위요소가 가로배치 */
+
+}
+.flexbox4{
+    display: flex; /*하위 요소에 대헤*/
+    border: 1px solid blue;
+    flex-direction: column; /*기본값(row) : 하위요소가 세로배치 */
+
+}
+.flexbox5{
+    display: flex; /*하위 요소에 대헤*/
+    border: 1px solid blue;
+    justify-content: flex-start;
+
+}
+.flexbox6{
+    display: flex; /*하위 요소에 대헤*/
+    border: 1px solid blue;
+    justify-content: flex-end;
+
+}
+.flexbox7{
+    display: flex; /*하위 요소에 대헤*/
+    border: 1px solid blue;
+    justify-content: center;
+
+}
+.flexbox8{
+    display: flex; /*하위 요소에 대헤*/
+    border: 1px solid blue;
+    justify-content: space-between;/*양끝에 여백없이 사이 자동여백 균등 정렬*/
+
+}
+.flexbox9{
+    display: flex; /*하위 요소에 대헤*/
+    border: 1px solid blue;
+    justify-content: space-around;/*양끝에 여백50% 에서 나머지 자동여백 균등 정렬*/
+
+}
+.flexbox10{
+    display: flex; /*하위 요소에 대헤*/
+    border: 1px solid blue;
+    justify-content: space-evenly;/*양끝에 여백과 사이 여백을 자동으로 균등하게 정렬*/
+
+}

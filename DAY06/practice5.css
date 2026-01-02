@@ -1,0 +1,40 @@
+span{
+    color: orange;
+}
+
+.flexbox1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 370px;
+    border: 1px solid grey;
+
+}
+.text1{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid grey;
+    
+}
+img{
+    width: 350px;
+    
+    /*object-fit : cover : 이미지가 부모 요소보다 커지면 자동 크기 맞춤*/
+}
+
+.text1-1{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.text1-2{
+    margin: 10px;
+    font-weight: bold;
+}
+.text1-3{
+    margin: 10px;
+}
+.text1-4{
+    margin: 10px;
+}

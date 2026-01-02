@@ -3,26 +3,32 @@ let useTimeList = [45, 130, 320];
 
 let 차량번호 = prompt('차량번호');
 
-let 사용시간 = useTimeList[carNumberList.indexOf(차량번호)]
 
-if (사용시간 !== -1) {
+let indexcar = carNumberList.indexOf(차량번호);
+let 주차시간_요금;
+
+if (indexcar !=-1) {
+    let 사용시간 = useTimeList[indexcar]
     if (사용시간 <= 60) {
         주차시간_요금 = 1000
     }
     else if (사용시간 > 60) {
-        주차시간_요금 = 1000 + ((사용시간 - 60 / 30) * 500)
+        주차시간_요금 = 1000 + (parseInt((사용시간 - 60) / 30) * 500)
 
         if ((사용시간 - 60) % 30 >= 1) {
             주차시간_요금 += 500
-        
-        if(주차시간_요금 >10000){
-                주차시간_요금=10000
-            }}
+        }
 
     }
 
+}else{
+    console.log('없음')
 }
-console.log(`${주차시간_요금}`)
+
+if (주차시간_요금 > 10000) {
+    주차시간_요금 = 10000;
+}
+console.log(주차시간_요금);
 
 
 

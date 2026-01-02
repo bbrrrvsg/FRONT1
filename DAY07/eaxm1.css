@@ -1,0 +1,30 @@
+*{
+    border: 1px solid red;
+    padding: 10px;
+}
+
+/* pc : 1000~1440px*/
+#header,#main,#footer{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#main{
+    display: flex;
+    flex-direction: row; /*기본 값*/
+    flex-wrap: nowrap;/*기본 값*/
+    justify-content: space-between;
+}
+
+#content{
+    width: 830px; ;/* 고정 : px  비율 : % */
+}
+#sidebar{
+    width: 420px;
+}
+/*높이는 내용물 만큼 자동크기 100%*/
+
+#footer{
+    background-color: grey;
+
+}

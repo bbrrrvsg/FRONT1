@@ -59,6 +59,7 @@ let scores1 = [77, 82, 100, 54, 96];
 for (let i = 0; i <= scores1.length - 1; i++) {
     if (scores1[i] == 100) {
         console.log(`${scores1[i]}점 만점자`)
+        break
     }
 }
 
@@ -106,11 +107,24 @@ let scores3 = [92, 86, 72];
 
 for (let i = 0; i < scores3.length; i++) {
     let index_num = nameArray.indexOf(nameArray[i])
+    let 십의자리 = 0
+    let 일의자리 = 0
+    let 점 = ''
+    
     for (let j = 1; j <= scores3[index_num]; j++) {
-        
         if(j%10==0){
-            document.querySelector('ul').innerHTML+='<li>●</li>'
+            십의자리 +=1
         }
+        
     }
+    for(let i =1; i<=십의자리; i++){
+        점 += '●'
+    }
+    일의자리 = 10-십의자리
+    for(let i =1; i<=일의자리; i++){
+        점 += '○'
+    }
+    document.querySelector('h3').innerHTML += `${nameArray[i]} ${점}<br>`
+    console.log(`${nameArray[i]} ${점}`)
 }
 

@@ -178,27 +178,23 @@ for 반복문을 사용하여 6개의 좌석을 모두 출력합니다.
 */
 
 let seatStatus = ['빈좌석', '예약석', '예약석', '빈좌석', '예약석', '빈좌석']
-let result = ``;
+let result = "";
 for (let i = 0; i < seatStatus.length; i++) {
     if (seatStatus[i] == '빈좌석') {
-        result += `<div style="color: blue;>${seatStatus[i]}</div>`
+        result += `<div style="color: blue; display: inline-block;">${seatStatus[i]}</div>`
     }
-    else if(seatStatus[i] == '예약석'){
-        result += `<div style="color: red;>${seatStatus[i]}</div>`
+    else {
+        result += `<div style="color: red; display: inline-block;">${seatStatus[i]}</div>`
+    }
+
+    if (i % 2 == 1) {
+        result += "<br/>"
+
     }
 
 }
-document.write(result);
 
-
-
-
-
-
-
-
-
-
+document.querySelector('body').innerHTML += result
 
 
 
@@ -231,3 +227,25 @@ HTML에 차량 번호, 주차 시간, 최종 요금을 한 줄씩 출력합니�
 계산 예시:65분 주차 시 parseInt( (65 - 30) / 10 )는 parseInt(3.5)가 되어 결과는 3이 됩니다. 따라서 추가 요금은 3 * 500원으로 계산됩니다.
 
 */
+
+let carNumbers = ['210어7125', '142가7415', '888호8888', '931나8234'];
+let usageMinutes = [65, 30, 140, 420];
+
+
+for (let i = 0; i < carNumbers.length; i++) {
+    let 차량 = carNumbers[i];
+    let 주차시간 = usageMinutes[i]
+    let 요금
+    if (주차시간 > 30) {
+        요금 = parseInt(1000 + (parseInt((주차시간 - 30) / 10) * 500));
+    }
+    else {
+        요금 = 1000
+    }
+
+    if (요금 > 20000) {
+        요금 = 20000
+    }
+    console.log(`${차량}:${주차시간}분 주차, ${요금}`)
+    document.querySelector('body').innerHTML += `<div>${차량}:${주차시간}분 주차, ${요금}<div/>`
+}

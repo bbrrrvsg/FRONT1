@@ -1,0 +1,48 @@
+a{
+    text-decoration: none; color: black;
+}
+
+
+
+
+
+/* 선택자 :hover 만일 해당요소에 마우스 올렸을떄*/
+a:hover{ color: red; font-size: 20px;}
+
+
+
+/* 선택자 :visited 방문한 적이 있는 링크일떄*/
+a:visited{color: blue;}
+
+
+
+/* 선택자 :active 만일 해당요소를 클릭하는 순간*/
+a:active{color:yellow}
+
+
+
+
+
+
+
+
+
+/*html에는 존재하지않지만 가상의요소content추가 */
+.box1::before{
+    content : "가상요소 [before]구역";
+    color: aqua;
+}
+.box1::after{
+    content: "가상요소[after]구역";
+    color: red;
+}
+/*1.활용 글머리*/
+li{list-style-type:none;}
+.box2 > li::before{content: '★'; color: red;}
+
+/*1.활용 글머리*/
+.box2>li:after{content: url('짱구1.jpg');}
+
+.box2>li:nth-of-type(1){
+    color: red;
+}

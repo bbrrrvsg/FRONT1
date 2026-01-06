@@ -1,0 +1,39 @@
+li{list-style-type: none;}
+#header{
+    background-color:beige ;
+}
+#header>ul{
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    padding: 20px;
+    position: relative;
+}
+
+#header .submenu{
+    position: absolute;
+    top: 50px; left: 0px;
+    padding: 10px;
+    background-color: beige;
+    display: none;
+}
+
+#header>ul>.menu:hover .submenu{display: block;}
+
+/*드롭다운 메뉴2*/
+
+*{padding: 0px; margin: 0px;}
+
+#header2{background-color: skyblue;}
+#header2>ul{display: flex; justify-content: center;}
+#header2>ul>li{padding: 10px;}
+#header2{position: relative;}
+#header2 .submenu2{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    background-color: skyblue;
+    display: none;
+}
+#header2>ul:hover .submenu2{display: block;}

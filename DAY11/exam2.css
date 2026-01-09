@@ -1,0 +1,53 @@
+/* [1] 만약에 width, height 생략시 상위요소 크기를 따라간다. */
+
+.box{
+    border: 1px solid red;
+    padding: 10px;
+    margin-bottom : 100px;
+}
+
+.size1{
+    width: 500px;
+    height: 500px;
+}
+
+.size2{
+    min-width: 600px; /*600px보다 크면100% 작으면 고정*/
+}
+
+.size3{
+    width: 200px;
+    min-width: 100px
+}
+.size4{
+    max-width: 600px;/*화면이 600px보다 크면 고정 작으면 100%*/
+}
+.size5{
+    max-height: 100px; /*크면 고정 작으면 100%*/
+}
+
+/* 만약에 하위요소의 컨텐츠/내용이 부모요소의 크기가 크면/넘치면 */
+.size6{
+    width: 200px; height: 100px;
+    overflow: scroll; /* overflow: visible 기본값 */
+}
+
+.size7{
+    width: 200px; height: 100px;
+    overflow: hidden; /*넘친거 가림*/
+}
+
+
+.size8{
+    width: 200px; height: 100px;
+    overflow: scroll; /* 항상스크롤 */
+}
+
+.size9{
+    width: 200px; height: 100px;
+    overflow: auto; /* 내용이 넘칠떄만 스크롤 */
+}
+.size10{
+    width: 200px; height: 100px;
+    overflow-y :scroll;  overflow-x : hidden;
+}

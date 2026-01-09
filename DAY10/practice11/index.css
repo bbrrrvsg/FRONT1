@@ -1,0 +1,217 @@
+*{
+    padding: 0px; margin: 0px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+li{list-style-type: none;}
+a{text-decoration: none; color: black;}
+#layout{
+    width: 1550px;
+    margin: 0 auto;
+}
+/*======================탑메뉴=========================*/
+.menu-top{
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    margin-right: 10px;
+    border-bottom: 1px solid grey;
+}
+span{
+    margin: 0px 10px;
+}
+/*=====================바텀메뉴==========================*/
+.bottom-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color:rgba(255,255,255,0.8)
+}
+.menu-bottom{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  
+}
+.logo{
+    width: 200px;
+    margin-right: 50px;
+
+}
+
+li{
+    padding: 10px;
+}
+#red-text{
+    color: red;
+}
+
+
+.search{
+    width: 20px;
+}
+input{
+    border: none;
+    background-color:rgba(255,255,255,0.2)
+
+}
+.abcde input{
+    background-color:rgba(255,255,255,0.2)
+}
+.abcde{
+    border-bottom: 2px solid black;
+    margin-right: 30px;
+}
+/*========================드롭 메누=======================*/
+.menu-bottom>li{
+    position: relative;
+}
+.menu-bottom .sub-menu{
+    position: absolute; top: 30px; left: -10px;
+    background-color: white;
+    width: 80px;
+    text-align: center;
+    display: none;
+}
+
+.menu-bottom>li:hover .sub-menu{display: block;}
+
+.sub-menu{
+    padding: 0px;
+}
+
+
+/*========================메인 이미지=======================*/
+
+.main_img{
+    width: 100%;
+}
+
+h3{
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    margin-top : 30px;
+}
+p{
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+/*====================메인===========================*/
+.item{
+    width: 350px;
+}
+.review-color{
+    display: flex;
+    justify-content: space-between;
+}
+.review-color>.review{
+    color: grey;
+}
+.img-main{
+    width: 350px;
+}
+
+.color > .black1{
+    border: 1px solid gray;
+    background-color: black;
+    margin-top: 10px;
+}
+.white1{
+    border: 1px solid grey;
+    background-color: white;
+}
+.color > span{
+    width: 10px; height: 10px;
+    display: inline-block;
+    margin: 0px;
+}
+.item-text{
+    margin: 10px 0px;
+}
+.item-text>.title{
+    font-weight: bold;
+}
+.item-text>.size{
+    color: gray;
+}
+.item-text>.fit{
+    font-weight: bold;
+}
+#per{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price>.original{
+    text-decoration: line-through;
+    color: grey;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+}
+#main>.item{
+    margin: 30px 18px;
+}
+
+/*====================footer===========================*/
+
+.footer-top{
+    display: flex;
+    background-color: #eeeeee;
+    padding: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.footer-top > ul{
+    margin: 30px 80px;
+}
+
+.footer-Bottom{
+    text-align: center;
+    color: grey;
+}
+
+/*====================popup===========================*/
+
+#popup{
+    position: fixed;
+    right: -20px; top: 200px;
+}
+
+#popup img{
+    width: 20px;
+}
+#popup > ul > li{
+    padding: 14px;
+    border: 1px solid #dbdbdb;
+    background-color: #f7f7f7;
+    position: relative;
+}
+#popup >ul >li >span{
+    position: absolute;
+    top: 15px; right: 40px;
+    display: none;
+    width: 80px; height: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#popup > ul > li:hover .popupsub{
+    display: inline;
+}

@@ -1,0 +1,57 @@
+.basictable{
+    width: 500px;
+    border: 1px solid red;
+}
+
+.basictable th ,.basictable td{
+    border: 1px solid red;
+    padding:  5px;
+   
+}
+/* 행마자 첫번쨰 td 선택 */
+.basictable td:nth-child(1){background-color: aqua;} /* 행마자 첫번쨰 td 선택 */
+.basictable td:nth-child(2),
+.basictable td:nth-child(3),
+.basictable td:nth-child(4),
+.basictable td:nth-child(5),
+.basictable td:nth-child(6){text-align: right;}
+
+
+.basictable td[colspan]{text-align: center;}
+
+.basictable tr:nth-child(5) > td[colspan]{
+    background-color: beige;
+}
+
+
+
+.styletable{
+    width: 700px;
+    border-collapse:collapse;/*이중테두리 없애기*/
+    text-align: center;
+    border: 1px solid black;
+    
+}
+.styletable > thead > tr > th{
+    background-color: blue;
+    color: white; 
+    font-size: bold;
+    
+}
+
+
+
+
+/*
+ :nth-of-type(odd) : 형제들 중에 홀수
+ :nth-of-type(even) : 형제들 중에 짝수
+*/
+.styletable > tbody > tr:nth-of-type(odd){
+    background-color: #eeeeee;
+}
+
+
+.styletable>tbody tr:hover{
+    background-color: gray; color:white
+}
+
